@@ -1,0 +1,48 @@
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google SSO</title>
+  <link rel="stylesheet" href="design1.css">
+  <script src="https://apis.google.com/js/platform.js" async="" defer=""></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Welcome to BYM Tech SSO</h1>
+      <h2> Create Account</h2>
+    </header>
+
+    <main>
+      <!-- Login Form -->
+      <form action="/login" method="POST">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required=""><br>
+
+        
+        
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required=""><br>
+
+        <button type="submit">Log In</button>
+      </form>
+
+      <p>Don't have an account? <a href="signup.html">Sign up here</a></p>
+
+      <p>Want to sign in with Google?</p>
+      <a href="https://accounts.google.com/o/oauth2/v2/auth?scope=openid%20profile%20email&amp;access_type=offline&amp;include_granted_scopes=true&amp;redirect_uri=http://localhost:8000/oauth2callback&amp;response_type=code&amp;client_id=996312584899-nujucg7nhcieai06n4tmn8evbu7kue0v.apps.googleusercontent.com">
+        <img src="GoogleSignIn.png" alt="Sign in with Google" style="width: 240px; height: auto;">
+      </a>
+
+      <p>Want to return to All About Bunnies? <a href="index.html">Return to All About Bunnies Website</a></p>
+    </main>
+
+    <footer>
+      <p>© 2025 BYM Tech</p>
+    </footer>
+  </div>
+
+  <script src="login.js"></script>
+
+</body>
+</html>
